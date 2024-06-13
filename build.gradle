@@ -1,0 +1,53 @@
+plugins {
+  id 'org.springframework.boot' version '2.5.6'
+  id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+  id 'java'
+}
+
+group = 'com.eteration.assignment'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  // Lombok
+  compileOnly 'org.projectlombok:lombok:1.18.24'
+  annotationProcessor 'org.projectlombok:lombok:1.18.24'
+  testCompileOnly 'org.projectlombok:lombok:1.18.24'
+  testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+  // Spring Boot Starters
+  implementation 'org.springframework.boot:spring-boot-starter-web'
+  implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+  implementation 'org.springframework.boot:spring-boot-configuration-processor'
+  implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+  // Validation API
+  implementation 'javax.validation:validation-api:2.0.1.Final'
+
+// SpringDoc OpenAPI
+  implementation 'org.springdoc:springdoc-openapi-core:1.1.49'
+  implementation 'org.springdoc:springdoc-openapi-ui:1.8.0'
+
+  // ModelMapper
+  implementation 'org.modelmapper:modelmapper:3.2.0'
+
+  // Spring Boot DevTools
+  developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+  // H2 Database
+  runtimeOnly 'com.h2database:h2:1.4.193'
+
+  // Test Dependencies
+  testImplementation('org.springframework.boot:spring-boot-starter-test') {
+    exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+  }
+  testImplementation 'org.mockito:mockito-core'
+}
+
+test {
+  useJUnitPlatform()
+}
