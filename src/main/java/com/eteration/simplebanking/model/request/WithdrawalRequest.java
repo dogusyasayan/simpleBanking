@@ -11,7 +11,8 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class WithdrawalRequest extends AccountTransactionRequest{
+public class WithdrawalRequest extends AccountTransactionRequest {
 
     private String description;
+    private double amount;
 }

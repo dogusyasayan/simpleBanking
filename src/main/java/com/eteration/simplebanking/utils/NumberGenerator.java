@@ -27,7 +27,6 @@ public class NumberGenerator {
                 codeBuilder.append(characters.charAt(random.nextInt(characters.length())));
             }
         }
-
         return codeBuilder.toString();
     }
 

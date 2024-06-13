@@ -1,9 +1,6 @@
 package com.eteration.simplebanking.builder;
 
-import com.eteration.simplebanking.exception.InsufficientBalanceException;
 import com.eteration.simplebanking.model.Account;
-import com.eteration.simplebanking.model.enums.ErrorStatus;
-import com.eteration.simplebanking.model.request.AccountTransactionRequest;
 import com.eteration.simplebanking.model.request.CreateAccountRequest;
 import com.eteration.simplebanking.utils.NumberGenerator;
 import org.springframework.stereotype.Component;

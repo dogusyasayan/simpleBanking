@@ -50,5 +50,4 @@ public class AccountConverter {
                 .currentBalance("Current Balance: " + newBalance)
                 .build();
     }
-
 }
