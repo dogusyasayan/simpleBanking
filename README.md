@@ -50,7 +50,7 @@ Bu Controller sınıfı, banka hesapları ile ilgili işlemleri gerçekleştirme
 - `POST /account/v1/payment/{accountId}`: Belirtilen hesaptan fatura öder. 
   - Örneğin: Bir müşteri fatura ödemek istediğinde bu endpoint kullanılır.
 
-# Tüm Uygulamanın Integration ve Unit Testleri Yazılmış Test Covarage %95 üzerindedir.
+# Tüm Uygulamanın Integration ve Unit Testleri Yazılmış Test Coverage %95 üzerindedir.
 ![image](https://github.com/dogusyasayan/simpleBanking/assets/79644280/9a75b5db-e0cb-488a-9f26-f7928d416029)
 <img width="1671" alt="image" src="https://github.com/dogusyasayan/simpleBanking/assets/79644280/df112fb7-63ac-499a-8883-428ef2ac483d">
 
