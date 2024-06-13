@@ -1,3 +1,65 @@
+# Simple Banking Uygulaması
+
+Bu proje, basit bir bankacılık uygulamasını içermektedir. Müşterilerin hesap oluşturması, para yatırması, para çekmesi ve fatura ödemesi gibi temel bankacılık işlemlerini gerçekleştirebilir.
+
+## Teknolojiler
+
+- Java
+- Spring Boot
+- H2 Database
+
+## Kurulum
+
+1. **Projeyi İndirin:**
+   ```bash
+   git clone https://github.com/dogusyasayan/simpleBanking.git
+
+#Veritabanı Ayarları:
+
+Projede H2 veritabanı kullanılmaktadır.
+Veritabanı ayarlarına dokunmanıza gerek yoktur.
+
+# Uygulamayı Başlatın:
+
+```sh
+./mvnw spring-boot:run
+```
+
+# Uygulamayı Test Edin:
+Tarayıcınızda http://localhost:8080/swagger-ui.html adresine giderek Swagger UI aracılığıyla uygulamayı test edebilirsiniz.
+
+# Swagger
+<img width="1521" alt="image" src="https://github.com/dogusyasayan/simpleBanking/assets/79644280/46e6c134-9658-4165-8f80-ba38bddabfd3">
+<img width="1401" alt="image" src="https://github.com/dogusyasayan/simpleBanking/assets/79644280/1730599c-cdb4-4b2c-ba77-59643c939ac4">
+
+
+# Simple Banking API Endpointleri
+
+Bu Controller sınıfı, banka hesapları ile ilgili işlemleri gerçekleştirmek için kullanılan API endpointlerini içermektedir.
+
+- `POST /account`: Yeni bir hesap oluşturur. 
+  - Örneğin: Bir müşteri yeni bir hesap açmak istediğinde bu endpoint kullanılır.
+- `DELETE /account/v1/{accountId}`: Belirtilen hesabı siler. 
+  - Örneğin: Bir müşteri hesabını kapatmak istediğinde bu endpoint kullanılır.
+- `GET /account/v1/{accountId}`: Belirtilen hesap bilgilerini getirir. 
+  - Örneğin: Bir müşteri hesap bilgilerini görüntülemek istediğinde bu endpoint kullanılır.
+- `POST /account/v1/credit/{accountId}`: Belirtilen hesaba para yatırır. 
+  - Örneğin: Bir müşteri hesabına para yatırmak istediğinde bu endpoint kullanılır.
+- `POST /account/v1/debit/{accountId}`: Belirtilen hesaptan para çeker. 
+  - Örneğin: Bir müşteri hesabından para çekmek istediğinde bu endpoint kullanılır.
+- `POST /account/v1/payment/{accountId}`: Belirtilen hesaptan fatura öder. 
+  - Örneğin: Bir müşteri fatura ödemek istediğinde bu endpoint kullanılır.
+
+# Tüm Uygulamanın Integration ve Unit Testleri Yazılmış Test Covarage %95 üzerindedir.
+![image](https://github.com/dogusyasayan/simpleBanking/assets/79644280/9a75b5db-e0cb-488a-9f26-f7928d416029)
+<img width="1671" alt="image" src="https://github.com/dogusyasayan/simpleBanking/assets/79644280/df112fb7-63ac-499a-8883-428ef2ac483d">
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 # Getting Started with Simple Banking (Estimated duration 1-3 hours)
 
 In this assignment you will build a banking service that can handle any number of transactions for bank accounts. The service is part of a larger collection of services that model the inner workings of a bank. The services for the "bank account" provide a simple model of how bank accounts might work in an overly simplified world.
