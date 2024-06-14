@@ -15,4 +15,5 @@ import lombok.experimental.SuperBuilder;
 public class BillPaymentRequest extends AccountTransactionRequest{
     private String billNumber;
     private String billerName;
+
 }
