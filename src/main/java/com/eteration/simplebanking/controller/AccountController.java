@@ -1,5 +1,6 @@
 package com.eteration.simplebanking.controller;
 
+import com.eteration.simplebanking.model.request.AccountTransactionRequest;
 import com.eteration.simplebanking.model.request.BillPaymentRequest;
 import com.eteration.simplebanking.model.request.CreateAccountRequest;
 import com.eteration.simplebanking.model.request.DepositRequest;
